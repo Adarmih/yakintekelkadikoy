@@ -1,0 +1,343 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF8800; /* Tamamen turuncu */
+    text-align: center;
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+}
+
+/* Hamburger Menü */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+/* Sidebar (Açılır Menü) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Başlangıçta ekran dışında */
+    width: 250px;
+    height: 100%;
+    background-color: #646262;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    left: 0; /* Ekrana getir */
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+/* Overlay (Sidebar açıkken arka planı karartmak için) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(101, 101, 101, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block; /* Göster */
+}
+
+/* Logo */
+.logo-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.logo {
+    width: 60px; /* Logo boyutu */
+    height: 60px;
+    border-radius: 50%; /* Yuvarlak logo */
+    border: 2px solid white; /* Logo çerçevesi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+/* Başlık Alanı */
+header {
+    background-color: #FF8800; /* Tamamen turuncu */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Sosyal Medya Butonları */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons a i {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.social-buttons .instagram-button {
+    background-color: #dd2a7b; /* Instagram rengi */
+}
+
+.social-buttons .telegram-button {
+    background-color: #0088CC; /* Telegram rengi */
+}
+
+.social-buttons a:hover {
+    opacity: 0.9;
+}
+
+/* Header Butonları */
+#header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#header-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#header-buttons .whatsapp-button {
+    background-color: #25D366;
+}
+
+#header-buttons .call-button {
+    background-color: #007BFF;
+}
+
+/* Ürün Kategorileri */
+.urunler {
+    padding: 20px;
+    background-color: white;
+}
+
+.urun-kategori {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #0057B8;
+    color: white;
+    max-width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.urun-kategori h3 {
+    color: #f0f0ef;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Ürün Slider */
+.urun-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.urun-slider img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+/* Sabit WhatsApp ve Arama Butonları */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.fixed-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.fixed-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.fixed-buttons .call-button {
+    background-color: #007BFF;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .urun-kategori h3 {
+        font-size: 1.5rem;
+    }
+
+    .urun-slider img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fixed-buttons a {
+        width: 150px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-buttons a {
+        width: 30%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .urun-kategori h3 {
+        font-size: 1.2rem;
+    }
+
+    .urun-slider img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .fixed-buttons {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .fixed-buttons a {
+        width: 120px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
