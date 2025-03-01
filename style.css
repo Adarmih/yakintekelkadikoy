@@ -158,7 +158,7 @@ p {
 }
 
 .social-buttons .instagram-button {
-    background-color: #c0485e; /* Instagram rengi */
+    background-color: #dd2a7b; /* Instagram rengi */
 }
 
 .social-buttons .telegram-button {
@@ -221,6 +221,7 @@ p {
 /* Ürün Slider */
 .urun-slider {
     display: flex;
+    justify-content: center; /* Görselleri ortala */
     overflow-x: auto;
     gap: 15px;
     padding: 10px;
@@ -233,6 +234,16 @@ p {
     border-radius: 10px;
     object-fit: cover;
     scroll-snap-align: center;
+}
+
+@media (min-width: 768px) {
+    .urun-slider {
+        justify-content: space-around; /* Geniş ekranlarda görselleri eşit aralıklarla yerleştir */
+    }
+    .urun-slider img {
+        width: 300px; /* Geniş ekranlarda görselleri büyüt */
+        height: 300px;
+    }
 }
 
 /* Sabit WhatsApp ve Arama Butonları */
