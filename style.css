@@ -218,31 +218,27 @@ p {
     margin-bottom: 15px;
 }
 
-/* Ürün Slider */
 .urun-slider {
     display: flex;
-    justify-content: center; /* Görselleri ortala */
     overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Yatay kaydırmada snap etkisi */
     gap: 15px;
     padding: 10px;
-    scroll-snap-type: x mandatory;
 }
 
 .urun-slider img {
-    width: 250px;
-    height: 250px;
+    width: 100%; /* Görsellerin genişliğini tamamen kapla */
+    max-width: 300px; /* Maksimum genişlik */
+    height: auto; /* Yüksekliği otomatik ayarla */
     border-radius: 10px;
     object-fit: cover;
-    scroll-snap-align: center;
+    scroll-snap-align: center; /* Her kaydırmada bir görsel tam ortada olsun */
+    flex: 0 0 auto; /* Görsellerin boyutunu sabitle */
 }
 
 @media (min-width: 768px) {
-    .urun-slider {
-        justify-content: space-around; /* Geniş ekranlarda görselleri eşit aralıklarla yerleştir */
-    }
     .urun-slider img {
-        width: 300px; /* Geniş ekranlarda görselleri büyüt */
-        height: 300px;
+        max-width: 400px; /* Geniş ekranlarda görselleri büyüt */
     }
 }
 
