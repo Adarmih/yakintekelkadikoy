@@ -203,9 +203,9 @@ p {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background: #0057B8;
+    background: linear-gradient(90deg, #0057B8, #FF8800); /* Maviden turuncuya geçiş */
     color: white;
-    max-width: 80%;
+    max-width: 90%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
 }
 
