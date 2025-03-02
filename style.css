@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FF8800; /* Tamamen turuncu */
+    background: linear-gradient(90deg, #0057B8, #FF8800); /* Maviden turuncuya geçiş */
     text-align: center;
     overflow-x: hidden; /* Yatay kaydırmayı engelle */
 }
@@ -100,7 +100,7 @@ body {
 
 /* Başlık Alanı */
 header {
-    background-color: #FF8800; /* Tamamen turuncu */
+    background: linear-gradient(90deg, #FF8800, #0057B8); /* Maviden turuncuya geçiş */
     color: rgb(0, 0, 0);
     padding: 20px;
     position: relative;
