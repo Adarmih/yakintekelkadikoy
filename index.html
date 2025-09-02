@@ -10,9 +10,32 @@
     <meta name="keywords" content="Kadıköy tekel, alkol sipariş, en yakın tekel, eve alkol siparişi, kapıya alkol servisi, Kadıköy alkol, 7/24 alkol siparişi, alkol online sipariş, tekel ürünleri, içki siparişi">
     <meta name="author" content="Kadıköy Tekel">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sitenizinadi.com" />
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kadıköy Tekel | Alkol Sipariş & En Yakın Tekel">
+    <meta property="og:description" content="Kadıköy'de 7/24 alkol siparişi. Bira, şarap, rakı, viski ve daha fazlası kapınıza teslim. En yakın tekel hizmeti.">
+    <meta property="og:image" content="https://www.sitenizinadi.com/img/2024-11-16.webp">
+    <meta property="og:url" content="https://www.sitenizinadi.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kadıköy Tekel | Alkol Sipariş & En Yakın Tekel">
+    <meta name="twitter:description" content="Kadıköy'de 7/24 alkol siparişi. Hemen sipariş verin, kapınıza gelsin!">
+    <meta name="twitter:image" content="https://www.sitenizinadi.com/img/2024-11-16.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/istockphoto-1658024639-612x612.jpg" type="image/x-icon">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
     <style>
         /* Genel Stil */
@@ -20,14 +43,18 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
+            font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #f9f9f9 0%, #e6f0ff 100%);
-            min-height: 100vh;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
         }
         
         .container {
@@ -36,33 +63,26 @@
             padding: 0 15px;
         }
         
-        h1, h2, h3 {
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-        
         /* Header */
         header {
             text-align: center;
             padding: 2rem 1rem;
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            background: linear-gradient(135deg, #1C3FAA 0%, #FFDD00 100%);
             color: white;
-            border-radius: 0 0 20px 20px;
+            border-radius: 0 0 10px 10px;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         header h2 {
             font-size: 1.5rem;
             font-weight: 400;
-            color: #ecf0f1;
+            color: #fff;
         }
         
         header p {
@@ -81,36 +101,34 @@
             max-width: 120px;
             height: auto;
             border-radius: 50%;
-            border: 4px solid #3498db;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 4px solid #1C3FAA;
         }
         
         /* Butonlar */
         .whatsapp-button, .call-button {
             display: inline-block;
-            padding: 14px 28px;
+            padding: 12px 25px;
             margin: 10px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
         .whatsapp-button {
-            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            background-color: #25D366;
             color: white;
         }
         
         .call-button {
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            background-color: #1C3FAA;
             color: white;
         }
         
         .whatsapp-button:hover, .call-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
         
         .social-buttons {
@@ -119,14 +137,13 @@
         
         .instagram-button, .telegram-button {
             display: inline-block;
-            padding: 12px 24px;
-            margin: 8px;
+            padding: 10px 20px;
+            margin: 5px;
             border-radius: 50px;
             text-decoration: none;
             color: white;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
         
         .instagram-button {
@@ -134,12 +151,7 @@
         }
         
         .telegram-button {
-            background: linear-gradient(135deg, #0088cc 0%, #004d73 100%);
-        }
-        
-        .instagram-button:hover, .telegram-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background-color: #0088cc;
         }
         
         /* Ürünler */
@@ -149,75 +161,40 @@
         
         .urunler h2 {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
-            color: #2c3e50;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .urunler h2:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, #3498db, #2c3e50);
-            border-radius: 2px;
+            color: #1C3FAA;
         }
         
         .urun-kategori {
             background: white;
-            border-radius: 15px;
-            padding: 1.8rem;
-            margin-bottom: 2.5rem;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
-        }
-        
-        .urun-kategori:hover {
-            transform: translateY(-5px);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .urun-kategori h3 {
-            font-size: 1.6rem;
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 0.8rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: #FFDD00;
+            border-bottom: 2px solid #1C3FAA;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         
         .urun-slider {
             display: flex;
             overflow-x: auto;
-            gap: 20px;
-            padding: 15px 5px;
-            scrollbar-width: thin;
-            scrollbar-color: #3498db #f1f1f1;
-        }
-        
-        .urun-slider::-webkit-scrollbar {
-            height: 8px;
-        }
-        
-        .urun-slider::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 10px;
-        }
-        
-        .urun-slider::-webkit-scrollbar-thumb {
-            background: #3498db;
-            border-radius: 10px;
+            gap: 15px;
+            padding: 10px 0;
         }
         
         .urun-slider img {
-            width: 220px;
-            height: 220px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
         
@@ -232,25 +209,23 @@
             left: 20px;
             z-index: 1000;
             cursor: pointer;
-            background: rgba(44, 62, 80, 0.9);
-            padding: 12px;
+            background: rgba(28, 63, 170, 0.9);
+            padding: 10px;
             border-radius: 50%;
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         
         .bar {
-            width: 28px;
+            width: 25px;
             height: 3px;
             background-color: white;
-            margin: 3px 0;
+            margin: 2px 0;
             border-radius: 2px;
-            transition: 0.3s;
         }
         
         .sidebar {
@@ -259,12 +234,12 @@
             left: -300px;
             width: 300px;
             height: 100%;
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: white;
             z-index: 1001;
-            padding: 2.5rem 1.5rem;
+            padding: 2rem 1rem;
             overflow-y: auto;
-            transition: left 0.4s ease;
-            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+            transition: left 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         }
         
         .sidebar.active {
@@ -277,173 +252,80 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.5);
             z-index: 999;
             display: none;
         }
         
         .sidebar-content h2 {
-            color: #3498db;
-            font-size: 1.6rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #3498db;
+            color: #1C3FAA;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
         }
         
         .sidebar-content ul {
             list-style: none;
+            padding-left: 1rem;
         }
         
         .sidebar-content li {
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
-            color: #ecf0f1;
-            font-size: 1.1rem;
         }
         
         .sidebar-content li i {
-            margin-right: 12px;
-            color: #3498db;
-            font-size: 1.2rem;
+            margin-right: 10px;
+            color: #FFDD00;
         }
         
         /* Fixed Buttons */
         .fixed-buttons {
             position: fixed;
-            bottom: 25px;
-            right: 25px;
+            bottom: 20px;
+            right: 20px;
             z-index: 998;
             display: flex;
             flex-direction: column;
         }
         
         .fixed-buttons a {
-            margin: 8px 0;
+            margin: 5px 0;
             text-align: center;
-            padding: 15px 22px;
+            padding: 12px 20px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         
         /* Footer */
         footer {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: #1C3FAA;
             color: white;
             text-align: center;
-            padding: 2.5rem 1.5rem;
-            margin-top: 3rem;
-            border-radius: 20px 20px 0 0;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
         }
         
         footer p {
-            margin-bottom: 1.2rem;
-            font-size: 1.1rem;
+            margin-bottom: 1rem;
         }
         
         footer a {
-            color: #3498db;
+            color: #FFDD00;
             text-decoration: none;
-            font-weight: 600;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
-            header {
-                padding: 1.5rem 1rem;
-                border-radius: 0 0 15px 15px;
-            }
-            
             header h1 {
                 font-size: 2rem;
             }
             
             header h2 {
-                font-size: 1.3rem;
-            }
-            
-            header p {
-                font-size: 1rem;
-            }
-            
-            .logo {
-                max-width: 100px;
-            }
-            
-            .urunler h2 {
-                font-size: 1.8rem;
-            }
-            
-            .urun-kategori {
-                padding: 1.3rem;
-                margin-bottom: 2rem;
-            }
-            
-            .urun-kategori h3 {
-                font-size: 1.4rem;
-            }
-            
-            .urun-slider img {
-                width: 180px;
-                height: 180px;
-            }
-            
-            .whatsapp-button, .call-button {
-                padding: 12px 22px;
-                font-size: 1rem;
-                margin: 8px;
-            }
-            
-            .instagram-button, .telegram-button {
-                padding: 10px 18px;
-                font-size: 0.9rem;
-            }
-            
-            .fixed-buttons {
-                bottom: 20px;
-                right: 15px;
-            }
-            
-            .fixed-buttons a {
-                padding: 12px 18px;
-                font-size: 0.9rem;
-            }
-            
-            .hamburger-menu {
-                top: 15px;
-                left: 15px;
-                width: 50px;
-                height: 50px;
-            }
-            
-            footer {
-                padding: 2rem 1rem;
-            }
-            
-            footer p {
-                font-size: 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.7rem;
-            }
-            
-            header h2 {
-                font-size: 1.1rem;
-            }
-            
-            .urunler h2 {
-                font-size: 1.6rem;
-            }
-            
-            .urun-kategori h3 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             
             .urun-slider img {
@@ -452,12 +334,8 @@
             }
             
             .whatsapp-button, .call-button {
-                padding: 10px 18px;
+                padding: 10px 20px;
                 font-size: 0.9rem;
-            }
-            
-            .sidebar {
-                width: 260px;
             }
         }
     </style>
@@ -490,7 +368,7 @@
             <ul>
                 <li><i class="fas fa-money-bill-wave"></i> Nakit Ödeme</li>
                 <li><i class="fas fa-credit-card"></i> Kredi/Banka Kartı</li>
-                <li><i class="fas fa-mobile-alt"></i> WhatsApp/Telefon ile Sipariş</li>
+                <li><i class="fas fa-mobile-alt"></i> Siparişlerinizi WhatsApp veya telefonla iletebilirsiniz!</li>
             </ul>
         </div>
     </aside>
@@ -499,12 +377,13 @@
 
     <!-- Logo -->
     <div class="logo-container">
-        <img src="https://cdn.pixabay.com/photo/2014/04/02/10/25/bottle-303761_1280.png" alt="Kadıköy Tekel - Hızlı Alkol Teslimatı" class="logo">
+        <img src="img/istockphoto-1658024639-612x612.jpg" alt="Kadıköy Tekel - Hızlı Alkol Teslimatı" class="logo" width="120" height="120">
     </div>
 
     <!-- Header -->
     <header>
         <h1>Kadıköy Tekel</h1>
+        <img src="img/2024-11-16.webp" alt="Kadıköy Tekel - Geniş alkol çeşitleri, hızlı teslimat" class="header-image" width="800" height="400">
         <h2>Alkol Sipariş & En Yakın Tekel | 7/24 Kapınıza</h2>
         <p>Kadıköy'de 7/24 alkol siparişi 🎉 - En yakın tekel hizmeti! 🛵 Kampanyalardan haberdar olmak için bizi takip edin.</p>
 
@@ -519,7 +398,7 @@
     </header>
 
     <!-- Call to Action Buttons -->
-    <div style="text-align: center; margin-bottom: 2.5rem;">
+    <div id="header-buttons" style="text-align: center; margin-bottom: 2rem;">
         <a href="https://wa.me/+905305604065" class="whatsapp-button">
             <i class="fab fa-whatsapp"></i> WhatsApp Sipariş
         </a>
@@ -529,63 +408,73 @@
     </div>
 
     <!-- Products Section -->
-    <main class="urunler container">
-        <h2>Ürün Grupları</h2>
+   <main class="urunler">
+    <h2>Ürün Grupları</h2>
 
-        <div class="urun-kategori">
-            <h3>Bira</h3>
-            <div class="urun-slider">
-                <img src="https://cdn.pixabay.com/photo/2015/12/12/14/57/beer-1089873_1280.jpg" alt="Bira Çeşitleri - Kadıköy Tekel">
-                <img src="https://cdn.pixabay.com/photo/2014/12/11/02/55/beer-563864_1280.jpg" alt="Soğuk Bira - Kadıköy">
-                <img src="https://cdn.pixabay.com/photo/2017/08/04/11/50/beer-2579790_1280.jpg" alt="Yerli ve Yabancı Biralar - Kadıköy">
-            </div>
+    <div class="urun-kategori">
+        <h3>Bira</h3>
+        <div class="urun-slider">
+            <img src="img/bira1.jpg.webp" alt="Efes Bira Çeşitleri" width="300" height="200">
+            <img src="img/bira2.jpg.jpg" alt="Yerli ve Yabancı Bira Markaları" width="300" height="200">
+            <img src="img/bira3.jpg.webp" alt="Soğuk Bira Servisi" width="300" height="200">
         </div>
+    </div>
 
-        <div class="urun-kategori">
-            <h3>Viski/Vodka</h3>
-            <div class="urun-slider">
-                <img src="https://cdn.pixabay.com/photo/2015/09/10/17/08/whisky-935177_1280.jpg" alt="Viski Çeşitleri - Kadıköy Tekel">
-                <img src="https://cdn.pixabay.com/photo/2020/05/12/11/19/vodka-5163050_1280.jpg" alt="Vodka Markaları - Kadıköy">
-                <img src="https://cdn.pixabay.com/photo/2016/11/21/13/18/alcohol-1845272_1280.jpg" alt="Viski Seçenekleri - Kadıköy">
-            </div>
+    <div class="urun-kategori">
+        <h3>Rakı</h3>
+        <div class="urun-slider">
+            <img src="img/raki1.jpg.webp" alt="Geleneksel Rakı Çeşitleri" width="300" height="200">
+            <img src="img/raki2.jpg.webp" alt="Premium Rakı Markaları" width="300" height="200">
+            <img src="img/raki3.jpg.webp" alt="Rakı Çeşitleri" width="300" height="200">
         </div>
+    </div>
 
-        <div class="urun-kategori">
-            <h3>Şarap</h3>
-            <div class="urun-slider">
-                <img src="https://cdn.pixabay.com/photo/2016/10/26/16/37/red-wine-1771796_1280.jpg" alt="Kırmızı Şarap - Kadıköy Tekel">
-                <img src="https://cdn.pixabay.com/photo/2015/09/10/17/07/wine-935173_1280.jpg" alt="Beyaz Şarap - Kadıköy">
-                <img src="https://cdn.pixabay.com/photo/2017/06/05/18/55/glass-2374910_1280.jpg" alt="Özel Şaraplar - Kadıköy">
-            </div>
+    <div class="urun-kategori">
+        <h3>Şarap</h3>
+        <div class="urun-slider">
+            <img src="img/sarap1.jpg.jpg" alt="Kırmızı Şarap Çeşitleri" width="300" height="200">
+            <img src="img/sarap2.jpg.jpeg" alt="Beyaz Şarap Seçenekleri" width="300" height="200">
+            <img src="img/sarap3.jpg.jpg" alt="Özel Şaraplar" width="300" height="200">
         </div>
+    </div>
 
-        <div class="urun-kategori">
-            <h3>Rakı</h3>
-            <div class="urun-slider">
-                <img src="https://cdn.pixabay.com/photo/2019/11/12/21/37/rakı-4622082_1280.jpg" alt="Geleneksel Rakı - Kadıköy Tekel">
-                <img src="https://cdn.pixabay.com/photo/2019/11/12/21/37/rakı-4622081_1280.jpg" alt="Rakı Çeşitleri - Kadıköy">
-                <img src="https://cdn.pixabay.com/photo/2019/11/13/06/14/rakı-4622930_1280.jpg" alt="Rakı ve Meze - Kadıköy">
-            </div>
+    <div class="urun-kategori">
+        <h3>Viski / Vodka</h3>
+        <div class="urun-slider">
+            <img src="img/viski1.jpg.jpg" alt="Viski Çeşitleri" width="300" height="200">
+            <img src="img/viski2.jpg.jpg" alt="Vodka Markaları" width="300" height="200">
+            <img src="img/viski3.jpg" alt="Yabancı Viski Markaları" width="300" height="200">
         </div>
+    </div>
 
-        <div class="urun-kategori">
-            <h3>Likör/Gin/Tequila</h3>
-            <div class="urun-slider">
-                <img src="https://cdn.pixabay.com/photo/2017/08/06/10/51/drinks-2599872_1280.jpg" alt="Likör Çeşitleri - Kadıköy Tekel">
-                <img src="https://cdn.pixabay.com/photo/2019/11/11/21/41/gin-4619760_1280.jpg" alt="Gin Markaları - Kadıköy">
-                <img src="https://cdn.pixabay.com/photo/2016/11/21/13/18/tequila-1845271_1280.jpg" alt="Tequila Seçenekleri - Kadıköy">
-            </div>
+    <div class="urun-kategori">
+        <h3>Cin / Tekila / Likör</h3>
+        <div class="urun-slider">
+            <img src="img/cin1.jpg.webp" alt="Cin Çeşitleri" width="300" height="200">
+            <img src="img/tekila1.jpg.webp" alt="Tekila Markaları" width="300" height="200">
+            <img src="img/likor1.jpg.webp" alt="Likör Çeşitleri" width="300" height="200">
         </div>
+    </div>
 
-        <div class="urun-kategori">
-            <h3>Meşrubat & Kuruyemiş</h3>
-            <div class="urun-slider">
-                <img src="https://cdn.pixabay.com/photo/2017/02/25/23/12/alcoholic-beverage-2099000_1280.jpg" alt="Meşrubat Çeşitleri - Kadıköy Tekel">
-                <img src="https://cdn.pixabay.com/photo/2017/01/17/09/12/drink-1986333_1280.jpg" alt="Soğuk İçecekler - Kadıköy">
-                <img src="https://cdn.pixabay.com/photo/2016/11/29/04/49/almond-1867182_1280.jpg" alt="Kuruyemiş Çeşitleri - Kadıköy">
-            </div>
+    <div class="urun-kategori">
+        <h3>Meşrubat</h3>
+        <div class="urun-slider">
+            <img src="img/mesrubat1.jpg.webp" alt="Gazlı İçecekler" width="300" height="200">
+            <img src="img/mesrubat2.jpg.webp" alt="Su ve Meyve Suları" width="300" height="200">
+            <img src="img/mesrubat3.jpg.webp" alt="Enerji İçecekleri" width="300" height="200">
         </div>
-    </main>
+    </div>
+
+    <div class="urun-kategori">
+        <h3>Kuruyemiş</h3>
+        <div class="urun-slider">
+            <img src="img/kuruyemis1.jpg.webp" alt="Çerez ve Kuruyemiş Çeşitleri" width="300" height="200">
+            <img src="img/kuruyemis2.jpg.webp" alt="Kuruyemiş Paketleri" width="300" height="200">
+            <img src="img/kuruyemis3.jpg.webp" alt="Fıstık, Badem, Çekirdek" width="300" height="200">
+        </div>
+    </div>
+</main>
+
 
     <!-- Fixed Buttons -->
     <div class="fixed-buttons">
@@ -609,29 +498,9 @@
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('overlay');
-            const bars = document.querySelectorAll('.bar');
-            
             sidebar.classList.toggle('active');
-            
-            if (sidebar.classList.contains('active')) {
-                overlay.style.display = 'block';
-                // Hamburger animasyonu
-                bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-                bars[1].style.opacity = '0';
-                bars[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
-            } else {
-                overlay.style.display = 'none';
-                // Hamburger animasyonu sıfırlama
-                bars[0].style.transform = 'none';
-                bars[1].style.opacity = '1';
-                bars[2].style.transform = 'none';
-            }
+            overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
         }
-        
-        // Sayfa yüklendiğinde
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Kadıköy Tekel sitesi yüklendi.');
-        });
     </script>
 </body>
 </html>
