@@ -1,181 +1,353 @@
-/* 7/24 Hizmet Rozeti */
-.service-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #e74c3c;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #0057B8, #FF8800); /* Maviden turuncuya geçiş */
+    text-align: center;
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+}
+
+/* Hamburger Menü */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    gap: 5px;
 }
 
-.badge-text {
-    font-size: 16px;
-    line-height: 1;
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: 0.4s;
 }
 
-.badge-subtext {
-    font-size: 10px;
-    line-height: 1;
+/* Sidebar (Açılır Menü) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Başlangıçta ekran dışında */
+    width: 250px;
+    height: 100%;
+    background-color: #646262;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    z-index: 1000;
+    overflow-y: auto;
 }
 
-/* Hizmet Özellikleri Bölümü */
-.service-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 30px 0;
+.sidebar.active {
+    left: 0; /* Ekrana getir */
+}
+
+.sidebar-content {
     padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
 }
 
-.highlight-item {
-    text-align: center;
-    width: 200px;
-    margin: 15px;
-}
-
-.highlight-item i {
-    font-size: 2.5rem;
-    color: #e74c3c;
+.sidebar h2 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
+    color: #000000;
 }
 
-.highlight-item h3 {
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
     margin: 10px 0;
-    color: #333;
+    font-size: 1.1rem;
+    color: #ffffff;
 }
 
-.highlight-item p {
-    color: #666;
-    font-size: 0.9rem;
+/* Overlay (Sidebar açıkken arka planı karartmak için) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(101, 101, 101, 0.5);
+    z-index: 999;
+    display: none;
 }
 
-/* SSS Bölümü */
-.faq-section {
-    margin: 40px 0;
+.overlay.active {
+    display: block; /* Göster */
+}
+
+/* Logo */
+.logo-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+.logo {
+    width: 60px; /* Logo boyutu */
+    height: 60px;
+    border-radius: 50%; /* Yuvarlak logo */
+    border: 2px solid white; /* Logo çerçevesi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+}
+
+/* Başlık Alanı */
+header {
+    background: linear-gradient(90deg, #FF8800, #0057B8); /* Maviden turuncuya geçiş */
+    color: rgb(0, 0, 0);
     padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
 }
 
-.faq-item {
-    border-bottom: 1px solid #eee;
-    padding: 15px 0;
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    border: 8px solid black; /* İnce siyah çerçeve */
+    border-radius: 10px; /* Köşeleri yuvarlak */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
 }
 
-.faq-item h3 {
+h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Sosyal Medya Butonları */
+.social-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-buttons a {
+    display: flex;
     align-items: center;
-    cursor: pointer;
-    margin: 0;
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.faq-answer.active {
-    max-height: 500px;
-}
-
-.faq-item p {
-    padding: 15px 0;
-    margin: 0;
-    color: #555;
-}
-
-/* Footer Düzenlemesi */
-footer {
-    background: #333;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    text-decoration: none;
     color: white;
-    padding: 30px 0 10px;
+    transition: background-color 0.3s ease;
 }
 
-.footer-content {
+.social-buttons a i {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 300px;
-    margin: 15px;
+.social-buttons .instagram-button {
+    background-color: #dd2a7b; /* Instagram rengi */
 }
 
-.footer-section h3 {
-    border-bottom: 1px solid #e74c3c;
-    padding-bottom: 10px;
+.social-buttons .telegram-button {
+    background-color: #0088CC; /* Telegram rengi */
+}
+
+.social-buttons a:hover {
+    opacity: 0.9;
+}
+
+/* Header Butonları */
+#header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#header-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#header-buttons .whatsapp-button {
+    background-color: #25D366;
+}
+
+#header-buttons .call-button {
+    background-color: #007BFF;
+}
+
+/* Ürün Kategorileri */
+.urunler {
+    padding: 20px;
+    background-color: white;
+}
+
+.urun-kategori {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #0057B8, #FF8800); /* Maviden turuncuya geçiş */
+    color: white;
+    max-width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.urun-kategori h3 {
+    color: #f0f0ef;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-.footer-section a {
-    display: block;
-    color: #ddd;
-    margin: 8px 0;
+.urun-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Yatay kaydırmada snap etkisi */
+    gap: 15px;
+    padding: 10px;
+}
+
+.urun-slider img {
+    width: 100%; /* Görsellerin genişliğini tamamen kapla */
+    max-width: 300px; /* Maksimum genişlik */
+    height: auto; /* Yüksekliği otomatik ayarla */
+    border-radius: 10px;
+    object-fit: cover;
+    scroll-snap-align: center; /* Her kaydırmada bir görsel tam ortada olsun */
+    flex: 0 0 auto; /* Görsellerin boyutunu sabitle */
+}
+
+@media (min-width: 768px) {
+    .urun-slider img {
+        max-width: 400px; /* Geniş ekranlarda görselleri büyüt */
+    }
+}
+
+/* Sabit WhatsApp ve Arama Butonları */
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.fixed-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.fixed-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.fixed-buttons .call-button {
+    background-color: #007BFF;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
     text-decoration: none;
 }
 
-.footer-section a:hover {
-    color: #e74c3c;
+footer a:hover {
+    text-decoration: underline;
 }
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #444;
-}
-
-/* Sidebar İçindeki Hizmet Bilgileri */
-.service-info {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
-.service-info h3 {
-    color: #e74c3c;
-    margin: 15px 0 5px;
-}
-
-/* Ürün Açıklamaları */
-.urun-kategori p {
-    text-align: center;
-    color: #555;
-    margin-top: 10px;
-    font-style: italic;
-}
-
-/* Responsive Düzenlemeler */
+/* Responsive Tasarım */
 @media (max-width: 768px) {
-    .service-highlights {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .urun-kategori h3 {
+        font-size: 1.5rem;
+    }
+
+    .urun-slider img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fixed-buttons a {
+        width: 150px;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .social-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
-    .highlight-item {
-        width: 100%;
-        max-width: 300px;
+
+    .social-buttons a {
+        width: 50%;
+        text-align: center;
     }
-    
-    .footer-content {
-        flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .urun-kategori h3 {
+        font-size: 1.2rem;
+    }
+
+    .urun-slider img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .fixed-buttons {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .fixed-buttons a {
+        width: 120px;
+        padding: 8px 12px;
+        font-size: 14px;
     }
 }
