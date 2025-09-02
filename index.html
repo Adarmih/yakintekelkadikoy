@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kadıköy İçki Servisi | Alkol Sipariş & Online İçki Kapınıza Teslim</title>
+    <title>Kadıköy Tekel | Alkol Sipariş & En Yakın Tekel Kapınıza Teslim</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Kadıköy'de 20 dakikada içki servisi! Bira, şarap, rakı, viski, kuruyemiş ve meşrubat çeşitleri kapınıza teslim. WhatsApp veya telefonla hemen alkol siparişi verin.">
-    <meta name="keywords" content="Kadıköy içki servisi, Kadıköy alkol sipariş, online içki siparişi, alkol kapıya servis, eve içki getiren, Kadıköy içki sipariş sitesi, hızlı alkol siparişi, Kadıköy gece alkol servisi">
-    <meta name="author" content="Kadıköy İçki Servisi">
+    <meta name="description" content="Kadıköy'de 7/24 alkol siparişi! Bira, şarap, rakı, viski, votka, cin, tekila, likör, kuruyemiş ve meşrubat çeşitleri kapınıza teslim. En yakın tekel hizmeti.">
+    <meta name="keywords" content="Kadıköy tekel, alkol sipariş, en yakın tekel, eve alkol siparişi, kapıya alkol servisi, Kadıköy alkol, 7/24 alkol siparişi, alkol online sipariş, tekel ürünleri, içki siparişi">
+    <meta name="author" content="Kadıköy Tekel">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.sitenizinadi.com" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Kadıköy İçki Servisi | Alkol Sipariş & Online İçki Kapınıza Teslim">
-    <meta property="og:description" content="Kadıköy'de hızlı içki servisi ve online alkol siparişi. 20 dakikada kapınızda. WhatsApp veya telefonla hemen sipariş verin.">
+    <meta property="og:title" content="Kadıköy Tekel | Alkol Sipariş & En Yakın Tekel">
+    <meta property="og:description" content="Kadıköy'de 7/24 alkol siparişi. Bira, şarap, rakı, viski ve daha fazlası kapınıza teslim. En yakın tekel hizmeti.">
     <meta property="og:image" content="https://www.sitenizinadi.com/img/2024-11-16.webp">
     <meta property="og:url" content="https://www.sitenizinadi.com">
     <meta property="og:type" content="website">
@@ -22,8 +22,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kadıköy İçki Servisi | Alkol Sipariş & Online İçki">
-    <meta name="twitter:description" content="Kadıköy'de hızlı içki servisi ve alkol siparişi. Hemen sipariş verin, kapınıza gelsin!">
+    <meta name="twitter:title" content="Kadıköy Tekel | Alkol Sipariş & En Yakın Tekel">
+    <meta name="twitter:description" content="Kadıköy'de 7/24 alkol siparişi. Hemen sipariş verin, kapınıza gelsin!">
     <meta name="twitter:image" content="https://www.sitenizinadi.com/img/2024-11-16.webp">
 
     <!-- Favicon -->
@@ -37,44 +37,309 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LiquorStore",
-      "name": "Kadıköy İçki Servisi",
-      "image": "https://www.sitenizinadi.com/img/2024-11-16.webp",
-      "url": "https://www.sitenizinadi.com",
-      "telephone": "+905305604065",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Kuşdili Cd. No:91 D:1A",
-        "addressLocality": "Kadıköy",
-        "addressRegion": "İstanbul",
-        "postalCode": "34472",
-        "addressCountry": "TR"
-      },
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "10:00",
-        "closes": "02:00"
-      }],
-      "priceRange": "₺",
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": "40.9819",
-          "longitude": "29.0576"
-        },
-        "geoRadius": "5000"
-      }
-    }
-    </script>
+    <style>
+        /* Genel Stil */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+            color: white;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 2rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #ecf0f1;
+        }
+        
+        header p {
+            max-width: 800px;
+            margin: 1rem auto;
+            font-size: 1.1rem;
+        }
+        
+        /* Logo */
+        .logo-container {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .logo {
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid #2c3e50;
+        }
+        
+        /* Butonlar */
+        .whatsapp-button, .call-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .call-button {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        .whatsapp-button:hover, .call-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .social-buttons {
+            margin: 1.5rem 0;
+        }
+        
+        .instagram-button, .telegram-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .instagram-button {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+        
+        .telegram-button {
+            background-color: #0088cc;
+        }
+        
+        /* Ürünler */
+        .urunler {
+            padding: 2rem 1rem;
+        }
+        
+        .urunler h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        
+        .urun-kategori {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .urun-kategori h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .urun-slider {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px 0;
+        }
+        
+        .urun-slider img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .urun-slider img:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Sidebar */
+        .hamburger-menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            background: rgba(44, 62, 80, 0.9);
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 2px 0;
+            border-radius: 2px;
+        }
+        
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background: white;
+            z-index: 1001;
+            padding: 2rem 1rem;
+            overflow-y: auto;
+            transition: left 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar.active {
+            left: 0;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none;
+        }
+        
+        .sidebar-content h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sidebar-content ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+        
+        .sidebar-content li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .sidebar-content li i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+        
+        /* Fixed Buttons */
+        .fixed-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 998;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .fixed-buttons a {
+            margin: 5px 0;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+        }
+        
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header h2 {
+                font-size: 1.2rem;
+            }
+            
+            .urun-slider img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .whatsapp-button, .call-button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Hamburger Menu -->
@@ -113,15 +378,15 @@
 
     <!-- Logo -->
     <div class="logo-container">
-        <img src="img/istockphoto-1658024639-612x612.jpg" alt="Kadıköy İçki Servisi - Hızlı Alkol Teslimatı" class="logo" width="120" height="120">
+        <img src="img/istockphoto-1658024639-612x612.jpg" alt="Kadıköy Tekel - Hızlı Alkol Teslimatı" class="logo" width="120" height="120">
     </div>
 
     <!-- Header -->
     <header>
-        <h1>Kadıköy İçki Servisi</h1>
-        <img src="img/2024-11-16.webp" alt="Kadıköy İçki Servisi - Geniş alkol çeşitleri, hızlı teslimat" class="header-image" width="800" height="400">
-        <h2>Alkol Sipariş & Online İçki | 20 Dakikada Kapınıza</h2>
-        <p>Kadıköy'de hızlı içki servisi 🎉 - Siparişler en fazla 20 dk'da teslim! 🛵 Kampanyalardan haberdar olmak için bizi takip edin.</p>
+        <h1>Kadıköy Tekel</h1>
+        <img src="img/2024-11-16.webp" alt="Kadıköy Tekel - Geniş alkol çeşitleri, hızlı teslimat" class="header-image" width="800" height="400">
+        <h2>Alkol Sipariş & En Yakın Tekel | 7/24 Kapınıza</h2>
+        <p>Kadıköy'de 7/24 alkol siparişi 🎉 - En yakın tekel hizmeti! 🛵 Kampanyalardan haberdar olmak için bizi takip edin.</p>
 
         <div class="social-buttons">
             <a href="https://www.instagram.com/dilkanstad.tekel" class="instagram-button" target="_blank" rel="noopener noreferrer">
@@ -134,7 +399,7 @@
     </header>
 
     <!-- Call to Action Buttons -->
-    <div id="header-buttons">
+    <div id="header-buttons" style="text-align: center; margin-bottom: 2rem;">
         <a href="https://wa.me/+905305604065" class="whatsapp-button">
             <i class="fab fa-whatsapp"></i> WhatsApp Sipariş
         </a>
@@ -150,7 +415,7 @@
         <div class="urun-kategori">
             <h3>Bira</h3>
             <div class="urun-slider">
-                <img src="img/bira1.jpg.webp" alt="Efes Bira Çeşitleri - Kadıköy İçki Servisi" width="300" height="200">
+                <img src="img/bira1.jpg.webp" alt="Efes Bira Çeşitleri - Kadıköy Tekel" width="300" height="200">
                 <img src="img/bira2.jpg.jpg" alt="Yerli ve Yabancı Bira Markaları - Kadıköy" width="300" height="200">
                 <img src="img/bira3.jpg.webp" alt="Soğuk Bira Servisi - Kadıköy" width="300" height="200">
             </div>
@@ -170,7 +435,7 @@
             <div class="urun-slider">
                 <img src="img/sarap1.jpg.jpg" alt="Kırmızı Şarap Çeşitleri - Kadıköy" width="300" height="200">
                 <img src="img/sarap2.jpg.jpeg" alt="Beyaz Şarap Seçenekleri - Kadıköy" width="300" height="200">
-                <img src="img/sarap3.jpg.jpg" alt="Özel Şaraplar - Kadıköy İçki Servisi" width="300" height="200">
+                <img src="img/sarap3.jpg.jpg" alt="Özel Şaraplar - Kadıköy Tekel" width="300" height="200">
             </div>
         </div>
 
@@ -179,7 +444,7 @@
             <div class="urun-slider">
                 <img src="img/raki1.jpg.webp" alt="Geleneksel Rakı Çeşitleri - Kadıköy" width="300" height="200">
                 <img src="img/raki2.jpg.jpg" alt="Yeni Nesil Rakılar - Kadıköy Sipariş" width="300" height="200">
-                <img src="img/raki3.jpg.webp" alt="Rakı Çeşitleri - Kadıköy İçki Servisi" width="300" height="200">
+                <img src="img/raki3.jpg.webp" alt="Rakı Çeşitleri - Kadıköy Tekel" width="300" height="200">
             </div>
         </div>
 
@@ -195,9 +460,9 @@
         <div class="urun-kategori">
             <h3>Meşrubat Çeşitleri</h3>
             <div class="urun-slider">
-                <img src="img/mesrubat1.jpg.jpg" alt="Gazlı İçecekler - Kadıköy İçki Servisi" width="300" height="200">
+                <img src="img/mesrubat1.jpg.jpg" alt="Gazlı İçecekler - Kadıköy Tekel" width="300" height="200">
                 <img src="img/mesrubat2.jpg.jpg" alt="Meyve Suları - Kadıköy Alkolsüz İçecek" width="300" height="200">
-                <img src="img/mesrubat3.jpg.jpg" alt Enerji İçecekleri - Kadıköy" width="300" height="200">
+                <img src="img/mesrubat3.jpg.jpg" alt="Enerji İçecekleri - Kadıköy" width="300" height="200">
             </div>
         </div>
 
@@ -211,23 +476,6 @@
         </div>
     </main>
 
-    <!-- FAQ Section -->
-    <section class="sss">
-        <h2>Sıkça Sorulan Sorular</h2>
-        <div class="sss-item">
-            <h3>Çalışma saatleriniz nedir?</h3>
-            <p>Her gün 10:00 - 02:00 saatleri arasında hizmet vermekteyiz.</p>
-        </div>
-        <div class="sss-item">
-            <h3>Minimum sipariş tutarı var mı?</h3>
-            <p>Minimum sipariş tutarımız 150 TL'dir.</p>
-        </div>
-        <div class="sss-item">
-            <h3>Teslimat süresi ne kadar?</h3>
-            <p>Siparişleriniz ortalama 20 dakika içerisinde kapınızda olur.</p>
-        </div>
-    </section>
-
     <!-- Fixed Buttons -->
     <div class="fixed-buttons">
         <a href="https://wa.me/+905305604065" class="whatsapp-button">
@@ -240,12 +488,30 @@
 
     <!-- Footer -->
     <footer>
-        <p>Kadıköy'de hızlı içki servisi ve alkol siparişi! 20 dakikada teslim, geniş ürün yelpazesi ve kampanyalar ile hizmetinizdeyiz.</p>
+        <p>Kadıköy'de 7/24 alkol siparişi! Hızlı teslim, geniş ürün yelpazesi ve kampanyalar ile hizmetinizdeyiz.</p>
         <p>📍 Adres: Osmanağa, Kuşdili Cd. No:91 D:1A, 34472 Kadıköy/İstanbul</p>
         <p>☎️ Telefon: <a href="tel:05305604065">0530 560 40 65</a></p>
-        <p>⏰ Çalışma Saatleri: Her gün 10:00 - 02:00</p>
+        <p>⏰ Çalışma Saatleri: 7/24</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            
+            sidebar.classList.toggle('active');
+            
+            if (sidebar.classList.contains('active')) {
+                overlay.style.display = 'block';
+            } else {
+                overlay.style.display = 'none';
+            }
+        }
+        
+        // Sayfa yüklendiğinde
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Kadıköy Tekel sitesi yüklendi.');
+        });
+    </script>
 </body>
 </html>
